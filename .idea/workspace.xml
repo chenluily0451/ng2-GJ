@@ -49,11 +49,11 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="271">
+              <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
-                <marker date="1494325886000" expanded="true" signature="3225:3297" ph="..." />
+                <marker date="1494327209000" expanded="true" signature="3225:3297" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,8 +93,8 @@
         <option value="$PROJECT_DIR$/my-app/src/app/equal-password.directive.ts" />
         <option value="$PROJECT_DIR$/my-app/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/my-app/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/my-app/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/my-app/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/my-app/src/app/app.component.ts" />
       </list>
     </option>
   </component>
@@ -290,12 +290,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494290813748</updated>
-      <workItem from="1494290815694" duration="24154000" />
+      <workItem from="1494290815694" duration="24770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24154000" />
+    <option name="totallyTimeSpent" value="24770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="6" />
@@ -445,11 +445,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="271">
+          <caret line="127" column="32" lean-forward="true" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-            <marker date="1494325886000" expanded="true" signature="3225:3297" ph="..." />
+            <marker date="1494327209000" expanded="true" signature="3225:3297" ph="..." />
           </folding>
         </state>
       </provider>
