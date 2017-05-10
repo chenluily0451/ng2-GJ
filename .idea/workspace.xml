@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="648899de-4f57-434e-97fc-d44a5d81d26f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/app/register/register.component.ts" afterPath="$PROJECT_DIR$/my-app/src/app/register/register.component.ts" />
-    </list>
+    <list default="true" id="648899de-4f57-434e-97fc-d44a5d81d26f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -42,15 +40,15 @@
       <file leaf-file-name="register.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/app/register/register.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="600">
+              <caret line="114" column="3" lean-forward="true" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
                 <element signature="n#!!block;n#ngAfterViewInit#0;n#registerComponent#0" expanded="false" />
-                <element signature="e#1381#1418#0" expanded="false" />
-                <element signature="e#1446#1682#0" expanded="false" />
-                <element signature="e#1704#1821#0" expanded="false" />
-                <element signature="e#1853#2259#0" expanded="false" />
+                <element signature="e#1377#1414#0" expanded="false" />
+                <element signature="e#1442#1678#0" expanded="false" />
+                <element signature="e#1700#1817#0" expanded="false" />
+                <element signature="e#1849#2255#0" expanded="false" />
                 <element signature="n#!!block;n#onValueChanged#0;n#registerComponent#0" expanded="false" />
                 <element signature="n#!!block;n#doSubmit#0;n#registerComponent#0" expanded="false" />
                 <element signature="n#!!block;n#finishReg#0;n#registerComponent#0" expanded="false" />
@@ -164,38 +162,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -305,12 +271,12 @@
       <option name="presentableId" value="Default" />
       <updated>1494290813748</updated>
       <workItem from="1494290815694" duration="28218000" />
-      <workItem from="1494381347434" duration="15229000" />
+      <workItem from="1494381347434" duration="16419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43447000" />
+    <option name="totallyTimeSpent" value="44637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="6" />
@@ -562,15 +528,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/app/register/register.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="600">
+          <caret line="114" column="3" lean-forward="true" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
             <element signature="n#!!block;n#ngAfterViewInit#0;n#registerComponent#0" expanded="false" />
-            <element signature="e#1381#1418#0" expanded="false" />
-            <element signature="e#1446#1682#0" expanded="false" />
-            <element signature="e#1704#1821#0" expanded="false" />
-            <element signature="e#1853#2259#0" expanded="false" />
+            <element signature="e#1377#1414#0" expanded="false" />
+            <element signature="e#1442#1678#0" expanded="false" />
+            <element signature="e#1700#1817#0" expanded="false" />
+            <element signature="e#1849#2255#0" expanded="false" />
             <element signature="n#!!block;n#onValueChanged#0;n#registerComponent#0" expanded="false" />
             <element signature="n#!!block;n#doSubmit#0;n#registerComponent#0" expanded="false" />
             <element signature="n#!!block;n#finishReg#0;n#registerComponent#0" expanded="false" />
