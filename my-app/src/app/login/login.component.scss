@@ -1,0 +1,39 @@
+div.header span {
+  text-decoration: none;
+}
+
+.next-step{
+  background: blue;
+  border:none;
+  color:#fff;
+  padding:10px 20px;
+}
+.form-group{
+  margin:10px 0;
+}
+.alert-danger{
+  color:red;
+}
+.error{
+  color:#ff0000;
+}
+button:disabled{
+  background: grey;
+}
+.form-group{
+  margin-bottom:20px;
+}
+.red{
+  color:red;
+}
+.btn100{
+  width:100%;
+}
+button:disabled{
+  color:#fff;
+  border:1px solid transparent;
+}
+.container{
+  min-width: 1200px;
+  margin-top: 100px;
+}

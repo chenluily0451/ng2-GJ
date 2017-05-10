@@ -1,0 +1,98 @@
+<div class="container">
+  <h1>
+    注册 - 上游企业
+  </h1>
+  <!--注册头部-->
+  <div class="header">
+    <span class="{{stepone?'red':''}}">1、设置用户名</span>
+    <span class="{{steptwo?'red':''}}">2、设置注册信息</span>
+    <span class="{{stepthree?'red':''}}">3、注册成功</span>
+  </div>
+  <!--手机号注册-->
+  <div *ngIf="stepone">
+    <form [formGroup]="mobileRegForm" >
+      <div class="form-group"  class="{{mobileRegFormErrors['mobile'] ?'form-group row has-danger':'form-group row'}}">
+        <label for="mobile" class="col-2 col-form-label">手机号</label>
+        <div class="col-6">
+          <input type="text"  class="{{mobileRegFormErrors['mobile']?'form-control form-control-danger':'form-control '}}"  name="mobile" id="mobile" formControlName="mobile">
+        </div>
+        <div class="col-4">
+          <div class="form-control-feedback">{{ mobileRegFormErrors['mobile'] }}</div>
+        </div>
+      </div>
+      <div class="form-group" class="{{mobileRegFormErrors['code']?'form-group row has-danger':'form-group row'}}">
+        <label for="code" class="col-2 col-form-label">手机验证码</label>
+        <div class="col-4">
+          <input type="text"  class="{{mobileRegFormErrors['code']?'form-control form-control-danger':'form-control '}}" name="code" id="code" formControlName="code">
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn100 btn-outline-primary" (click)="getVerifyCode($event)">{{verifyCodeTxt || "获取验证码"}}</button>
+        </div>
+        <div class="col-4">
+          <div class="form-control-feedback">{{ mobileRegFormErrors['code'] }}</div>
+        </div>
+
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" [disabled]="!mobileRegForm.valid" (click)="doSubmit(mobileRegForm.value)">下一步</button>
+    </form>
+    {{mobileRegForm.value|json}}
+  </div>
+
+  <!--用户名密码注册-->
+  <div *ngIf="steptwo">
+    <form [formGroup]="userRegForm" >
+      <div class="form-group" class="{{userRegFormErrors['username']?'form-group row has-danger':'form-group row'}}">
+        <label for="mobile" class="col-2 col-form-label">用户名</label>
+        <div class="col-6">
+          <input type="text"  class="{{userRegFormErrors['username']?'form-control form-control-danger':'form-control '}}" name="username" id="username" formControlName="username">
+        </div>
+        <div class="col-4">
+          <div class="form-control-feedback">{{userRegFormErrors['username'] }}</div>
+        </div>
+      </div>
+      <div class="form-group" class="{{userRegFormErrors['password']?'form-group row has-danger':'form-group row'}}">
+        <label for="password" class="col-2 col-form-label">密码</label>
+        <div class="col-6">
+          <input type="password" class="{{userRegFormErrors['password']?'form-control form-control-danger':'form-control '}}" name="password" id="password" formControlName="password"  validateEqual="confirmPassword" reverse="true">
+        </div>
+        <div class="col-4">
+          <div class="form-control-feedback">{{ userRegFormErrors['password'] }}</div>
+        </div>
+      </div>
+      <div class="form-group" class="{{userRegFormErrors['confirmPassword']?'form-group row has-danger':'form-group row'}}">
+        <label for="confirmPassword" class="col-2 col-form-label">确认密码</label>
+        <div class="col-6">
+          <input type="password" class="{{userRegFormErrors['confirmPassword']?'form-control form-control-danger':'form-control '}}" name="confirmPassword" validateEqual="password" formControlName="confirmPassword" id="confirmPassword">
+        </div>
+        <div class="col-4">
+          <div class="form-control-feedback">{{ userRegFormErrors['confirmPassword'] }}</div>
+        </div>
+      </div>
+      <div class="form-group" class="{{userRegFormErrors['verifyCode']?'form-group row has-danger':'form-group row'}}">
+        <label for="verifyCode" class="col-2 col-form-label">验证码</label>
+        <div class="col-4">
+          <input type="text" class="{{userRegFormErrors['verifyCode']?'form-control form-control-danger':'form-control '}}" name="verifyCode" formControlName="verifyCode" id="verifyCode">
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn100 btn-outline-primary" (click)="getVerifyCode($event)">获取验证码</button>
+        </div>
+        <div class="col-4">
+          <div class="form-control-feedback">{{ userRegFormErrors['verifyCode'] }}</div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg" [disabled]="!userRegForm.valid" (click)="finishReg()">完成注册</button>
+    </form>
+  </div>
+
+  <!--注册成功-->
+  <div *ngIf="stepthree">
+    恭喜您，注册成功！
+    <br>
+    请登录后，进行企业信息申请
+    <br>
+    <button class="btn btn-primary" (click)="gotoLogin()">前往登录</button>
+  </div>
+</div>
+
+

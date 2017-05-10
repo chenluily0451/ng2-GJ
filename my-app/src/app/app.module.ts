@@ -1,0 +1,38 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { RouterModule,Routes }   from '@angular/router';
+import { AppComponent } from './app.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { EqualValidator } from './equal-password.directive';
+import { LoginComponent } from './login/login.component';
+import { registerComponent } from './register/register.component';
+
+const appRoutes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: "full" },
+  { path: 'register', component: registerComponent },
+  { path: 'login', component: LoginComponent }
+];
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    EqualValidator,
+    registerComponent,
+    LoginComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+export class AppModule { }
+
