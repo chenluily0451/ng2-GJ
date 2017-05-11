@@ -1,0 +1,8 @@
+<h1>Tour of Heroes ({{mode}})</h1>
+<h3>Heroes:</h3>
+
+<ul>
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.red]="hero === selectedHero">{{hero.name}}</li>
+</ul>
+
+<app-temp-detail [hero1]="selectedHero"></app-temp-detail>

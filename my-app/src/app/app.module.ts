@@ -9,11 +9,16 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { EqualValidator } from './equal-password.directive';
 import { LoginComponent } from './login/login.component';
 import { registerComponent } from './register/register.component';
+import { TempComponent } from './temp/temp.component';
+import { TempDetailComponent } from './temp-detail/temp-detail.component';
+import { tempService } from './temp/temp.service';
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: "full" },
   { path: 'register', component: registerComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'temp', component: TempComponent }
 ];
 
 @NgModule({
@@ -21,7 +26,9 @@ const appRoutes: Routes = [
     AppComponent,
     EqualValidator,
     registerComponent,
-    LoginComponent
+    LoginComponent,
+    TempComponent,
+    TempDetailComponent
   ],
   imports: [
     BrowserModule,
