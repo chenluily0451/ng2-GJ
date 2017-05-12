@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { registerComponent } from './register/register.component';
 import { TempComponent } from './temp/temp.component';
 import { TempDetailComponent } from './temp-detail/temp-detail.component';
-import { tempService } from './temp/temp.service';
+import { HighlightDirective } from './directive/highlight.directive';
 
 
 const appRoutes: Routes = [
@@ -28,7 +28,8 @@ const appRoutes: Routes = [
     registerComponent,
     LoginComponent,
     TempComponent,
-    TempDetailComponent
+    TempDetailComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
