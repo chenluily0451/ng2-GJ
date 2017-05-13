@@ -8,8 +8,8 @@ import { matchingPasswords } from '../validators/validators';
   styleUrls: ['./register.component.scss']
 })
 export class registerComponent {
-  stepone:boolean = false;
-  steptwo:boolean = true;
+  stepone:boolean = true;
+  steptwo:boolean = false;
   stepthree:boolean = false;
   mobileRegForm: FormGroup;
   userRegForm: FormGroup;
