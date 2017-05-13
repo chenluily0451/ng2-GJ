@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule,Routes }   from '@angular/router';
 import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { EqualValidator } from './equal-password.directive';
+// import { EqualValidator } from './equal-password.directive';
 import { LoginComponent } from './login/login.component';
 import { registerComponent } from './register/register.component';
 import { TempComponent } from './temp/temp.component';
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    EqualValidator,
+    // EqualValidator,
     registerComponent,
     LoginComponent,
     TempComponent,

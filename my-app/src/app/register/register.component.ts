@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import {FormGroup, FormControl, FormBuilder, Validators} from "@angular/forms";
-import {Router} from '@angular/router';
+import { FormGroup, FormControl, FormBuilder, Validators} from "@angular/forms";
+import { Router} from '@angular/router';
+import { matchingPasswords } from '../validators/validators';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
 export class registerComponent {
-  stepone:boolean = true;
-  steptwo:boolean = false;
+  stepone:boolean = false;
+  steptwo:boolean = true;
   stepthree:boolean = false;
   mobileRegForm: FormGroup;
   userRegForm: FormGroup;
@@ -18,8 +19,8 @@ export class registerComponent {
 
   }
   constructor(private fb: FormBuilder,router: Router) {this.router=router;}
-  ngOnInit() {
 
+  ngOnInit() {
     this.mobileRegForm = this.fb.group({
       'mobile' : ['', [Validators.required,Validators.pattern(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/)]],
       'code' : ['', [Validators.required, Validators.minLength(4)]]
@@ -30,7 +31,7 @@ export class registerComponent {
       'password' : ['', [Validators.required, Validators.minLength(6)]],
       'confirmPassword' : ['', [Validators.required]],
       'verifyCode' : ['', [Validators.required, Validators.minLength(6)]]
-    });
+    },{validator: matchingPasswords('password', 'confirmPassword')});
 
     this.mobileRegForm.valueChanges.subscribe(data => this.onValueChanged(data));
 
@@ -50,17 +51,13 @@ export class registerComponent {
     'code'   : {
       'required'  : '验证码必填.',
       'minlength' : '验证码最少4位'
-    },
-    'confirmPassword' : {
-      'required'  : '确认密码必填.'
     }
   };
   userRegFormErrors={
     'username':'',
     'password':'',
     'confirmPassword':'',
-    'verifyCode' : '',
-    'validateEqual' : ''
+    'verifyCode' : ''
   };
   userRegFormErrorsMessages = {
 
@@ -71,11 +68,11 @@ export class registerComponent {
     'password'   : {
       'required'  : '密码必填.',
       'minlength' : '密码最少6位',
-      'validateEqual':'确认密码必须和密码一样'
+      'mismatchedPasswords':'密码不一致'
     },
     'confirmPassword' : {
       'required'  : '确认密码必填.',
-      'validateEqual' : '确认密码必须和密码一样'
+      'mismatchedPasswords':'密码不一致'
     },
     'verifyCode' : {
       'required'  : '验证码必填.',
@@ -95,6 +92,7 @@ export class registerComponent {
       }
 
     }
+
     for (const field in this.userRegFormErrors) {
       this.userRegFormErrors[field] = '';
       const control = this.userRegForm.get(field);
